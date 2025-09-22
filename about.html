@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <!-- Font Awesome for back icon -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  >
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color:#d6c6c6;
+      color: #333;
+    }
+
+    /* Back */
+    .back-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 24px;
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s;
+      z-index: 10;
+    }
+
+    .back-btn:hover {
+      color: #ff6b6b;
+    }
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 100vh;
+    }
+
+    .about-image {
+      flex: 1;
+      background-image: url("https://plus.unsplash.com/premium_photo-1673758905770-a62f4309c43c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW9kZWx8ZW58MHx8MHx8fDA%3D");
+      min-height: 400px;
+    }
+
+    .about-content {
+      flex: 1;
+      padding: 60px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .about-content h1 {
+      font-size: 50px;
+      margin: 0 0 20px;
+      font-weight: 700;
+      color: #111;
+    }
+
+    .about-content p {
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    /* Creato */
+    .creator {
+      padding: 60px 20px;
+      text-align: center;
+      background: #b68989;
+    }
+
+    .creator h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      color: #111;
+    }
+
+    .creator p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #444;
+    }
+
+    /* Team section */
+    .team {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .team h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #111;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .team-member {
+      background: #c7a2a2;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .team-member:hover {
+      transform: translateY(-5px);
+    }
+
+    .team-member img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .team-member h3 {
+      margin: 10px 0 5px;
+      font-size: 20px;
+      font-weight: 600;
+      color: #111;
+    }
+
+    .team-member p {
+      margin: 0;
+      font-size: 15px;
+      color: #555;
+    }
+
+    @media (max-width: 360px) {
+      .about-container {
+        flex-direction: column;
+      }
+
+      .about-content {
+        padding: 40px 20px;
+      }
+
+      .about-content h1 {
+        font-size: 38px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Back Icon -->
+  <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i></a>
+
+  <!-- About Us Section -->
+  <div class="about-container">
+    <div class="about-image"></div>
+    <div class="about-content">
+      <h1>About Us</h1>
+      <p>
+        At Fashion Nova India, we are passionate about creating styles that blend 
+        tradition with modern trends. Our focus is on delivering premium quality 
+        and a unique shopping experience.
+      </p>
+      <p>
+        We collaborate with skilled Indian designers and artisans to bring 
+        exclusive collections that celebrate culture while embracing global fashion.
+      </p>
+      <p>
+        Every piece we make is crafted with love, care, and the belief that 
+        fashion should be for everyone.
+      </p>
+    </div>
+  </div>
+<section class="creator">
+  <h2>Meet the Creator</h2>
+  <p>
+    Fashion Nova was founded by <strong>Amreen Shaikh</strong>, driven by a passion 
+    for redefining contemporary fashion. With a focus on creativity, inclusivity, 
+    and authenticity, Amreen has built a brand that celebrates individuality and 
+    empowers people to express their unique style with confidence.
+  </p>
+</section>
+
+  
+  
+  <!-- Twm-->
+  <section class="team">
+    <h2>Our Team</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="https://randomuser.me/api/portraits/women/19.jpg" alt="Team Member">
+        <h3>Sakina Khan</h3>
+        <p>Lead Designer</p>
+      </div>
+      <div class="team-member">
+        <img src="https://randomuser.me/api/portraits/men/50.jpg" alt="Team Member">
+        <h3>Arjun Patel</h3>
+        <p>Operations Head</p>
+      </div>
+      <div class="team-member">
+        <img src="https://randomuser.me/api/portraits/men/48.jpg" alt="Team Member">
+        <h3>Rehan Ali</h3>
+        <p>Marketing Strategist</p>
+      </div>
+      <div class="team-member">
+        <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="Team Member">
+        <h3>Priya Sharma</h3>
+        <p>Product Manager</p>
+      </div>
+      <!-- <div class="team-member">
+        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Team Member">
+        <h3>Farhan Ansari</h3>
+        <p>Web Developer</p>
+      </div> -->
+    </div>
+  </section>
+  
+
+    <footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section footer-logo-desc">
+      <img src="https://cdn.sanity.io/images/0v989dzu/production/993914f2bd49ab218a950e1d30e808c0926a6378-183x22.svg?width=244&height=30&crop=center" alt="Fashion Nova Logo" class="footer-logo" >
+      <p class="footer-description">
+        Fashion Nova is your go-to destination for bold, trendsetting women’s fashion — designed to empower confidence every day.
+      </p>
+      <a href="#" class="footer-link">Our Team</a>
+    </div>
+
+    <div class="footer-section footer-contact">
+      <h4>Contact</h4>
+      <p><i class="ri-map-pin-line"></i>123 Fashion St, New York, NY</p>
+      <p><i class="ri-phone-line"></i>+1 (555) 123-4567</p>
+      <p><i class="ri-mail-line"></i><a href="mailto:hello@fashionnova.com" class="footer-link">hello@fashionnova.com</a></p>
+      <p><i class="ri-skype-line"></i>fashionnova_support</p>
+    </div>
+
+    <div class="footer-section footer-links">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="index.html" class="footer-link">Home</a></li>
+        <li><a href="about.html" class="footer-link">About Us</a></li>
+        <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+        <li><a href="#" class="footer-link">Plans & Pricing</a></li>
+        <li><a href="#" class="footer-link">Affiliates</a></li>
+        <li><a href="#" class="footer-link">Terms</a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+
+</body>
+</html>
